@@ -1,4 +1,5 @@
 
+# What is this?
 
 I made this on a boring night while wanting to write some code. I used to be
 intimidated by each step in compiler design, but I've become a lot more
@@ -9,3 +10,10 @@ write a compiler (probably C because who doesn't love C?).
 This isn't something I care too heavily about, so it probably won't be maintained
 and probably isn't the best for actual use. This is more of a neat little project
 to fill a night's time.
+
+
+# Notes
+
+Wow that was a lot faster than I thought. Coolio.
+
+Inspired by [ply](https://github.com/dabeaz/ply) and [sly](https://github.com/dabeaz/sly)

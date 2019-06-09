@@ -61,13 +61,6 @@ class Lex():
         return re.compile('|'.join(regex_parts))
         
     
-    def scan(self):
-        pass
-
-
-    def next_token(self):
-        pass
-    
     def all_tokens(self, source: str):
         """Returns all tokens that were found in the given string
 
