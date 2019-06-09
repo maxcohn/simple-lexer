@@ -8,7 +8,8 @@ class Lex():
 
     """Creates a lexical analyzer based on the input token definitions
 
-
+    Note: Order of the tokens in the dictionary matter. I thought that hashing
+    would break that, but it doesn't seem to have... yet.
     """
 
     def __init__(self, tokens: dict, skip: dict):
@@ -86,13 +87,13 @@ class Lex():
             # check if the next token is one we need to skip
             is_skip = self.master_skip.match(source, pos)
             if is_skip is not None:
-                pos += is_skip.end()
+                pos = is_skip.end()
                 continue
             
             # check if the next token is an actual token
             is_tok = self.master_regex.match(source, pos)
             if is_tok is not None:
-                pos += is_tok.end()
+                pos = is_tok.end()
                 tok_type = ''
 
                 # check to see which named group in the dict has the match
